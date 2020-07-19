@@ -115,6 +115,16 @@ impl std::convert::From<u8> for FlagsRegister{
 }
 
 
+//define Instructions
+
+enum Instruction {
+    ADD(ArithmeticTarget),
+}
+
+//Specifies target register
+enum ArithmeticTarget {
+    A, B, C, D, E, H, L,
+}
 
 
 
